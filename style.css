@@ -1,0 +1,99 @@
+@font-face {
+    src: url(assets/CursedTimerULiL.ttf);
+    font-family: CursedTimer;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --background: #1B244A;
+    --point-scored: #F94F6D;
+    --background-score: #080001;
+    --add-point: #9AABD8;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 575px;
+    background-color: var(--background);
+    margin: 10% auto; 
+    padding: 60px 0px;                                               
+}
+.scoreboard {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-side, .guest-side {
+    font-family: CursedTimer, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: white;
+    margin: 0px auto 20px auto; 
+}
+
+.score {
+    display: inline-block;
+    font-size: 90px;
+    color: var(--point-scored);
+    background-color: var(--background-score);
+    width: 155px;
+    height: 120px;    
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    
+}
+
+#home1,
+#home2,
+#home3,
+#guest1,
+#guest2,
+#guest3 {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--add-point);
+    padding: 10px;
+    border: 2px solid var(--add-point);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new-game {
+    text-align: center;
+    padding: 15px 30px;
+    width: 220px;
+    margin-top: 50px;
+    font-size: 38px;
+    line-height: 28px;
+    color: var(--add-point);
+    border: 2px solid var(--add-point);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    height: 45px;
+    width: 45px;
+    font-family: CursedTimer, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--add-point);
+    padding: 10px;
+    border: 2px solid var(--add-point);
+    background-color: var(--background);
+    border-radius: 5px;
+    cursor: pointer;
+}
